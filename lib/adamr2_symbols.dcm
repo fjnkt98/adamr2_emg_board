@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP G6C-1114P-US
+D Omron G6C relay, Miniature High Capacity Relays with SPST-NO
+K Miniature Single Pole Relay
+F https://omronfs.omron.com/ja_JP/ecb/products/pdf/g6c.pdf
+$ENDCMP
+#
+#End Doc Library
