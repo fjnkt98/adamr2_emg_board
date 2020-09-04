@@ -157,12 +157,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR05
 U 1 1 5F254AEA
-P 7450 3100
-F 0 "#PWR05" H 7450 2850 50  0001 C CNN
-F 1 "GND" H 7455 2927 50  0000 C CNN
-F 2 "" H 7450 3100 50  0001 C CNN
-F 3 "" H 7450 3100 50  0001 C CNN
-	1    7450 3100
+P 7450 2700
+F 0 "#PWR05" H 7450 2450 50  0001 C CNN
+F 1 "GND" H 7455 2527 50  0000 C CNN
+F 2 "" H 7450 2700 50  0001 C CNN
+F 3 "" H 7450 2700 50  0001 C CNN
+	1    7450 2700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -183,9 +183,7 @@ $EndComp
 Text Notes 7900 4000 0    50   ~ 0
 4 : VCC(INPUT)\n3 : GND(INPUT)\n2 : VCC(OUTPUT)\n1 : GND(OUTPUT)
 Wire Wire Line
-	6400 3350 7600 3350
-Wire Wire Line
-	7450 3100 7450 3250
+	6400 3350 7050 3350
 Wire Wire Line
 	7450 3250 7600 3250
 Wire Wire Line
@@ -207,4 +205,25 @@ F 3 "https://omronfs.omron.com/ja_JP/ecb/products/pdf/g6c.pdf" H 6100 3250 50  0
 	1    6100 3250
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:CP C1
+U 1 1 5F520487
+P 7050 3200
+F 0 "C1" H 6932 3154 50  0000 R CNN
+F 1 "CP" H 6932 3245 50  0000 R CNN
+F 2 "adamr2_footprints:UFG1H102MHM" H 7088 3050 50  0001 C CNN
+F 3 "~" H 7050 3200 50  0001 C CNN
+	1    7050 3200
+	-1   0    0    1   
+$EndComp
+Connection ~ 7050 3350
+Wire Wire Line
+	7050 3350 7600 3350
+Wire Wire Line
+	7450 2700 7450 3050
+Wire Wire Line
+	7050 3050 7450 3050
+Connection ~ 7450 3050
+Wire Wire Line
+	7450 3050 7450 3250
 $EndSCHEMATC
